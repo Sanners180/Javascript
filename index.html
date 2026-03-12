@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Happy Birthday my darling Hanu</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <audio id="bgMusic" src="background-music.mp3" loop autoplay></audio>
+        <audio id="button_click" src="button-click.mp3" preload="auto"></audio>
+        <div id="full-page">
+            <div class ="hanu">
+                <img id = "spritesheet" src = 'hanu-sprite.png' alt ="My darling hanu"/>
+
+            </div>
+            <div class="page" id="intro">
+                <div id="hi">
+                    <h1 class="just-another-hand-regular " >hi <3</h1> 
+                    <div id="hi_boundary" class="obstacle"></div>
+                </div>
+            </div>
+            <div class = "divider"> 
+                <svg id="bubbles" viewBox="0 0 1440 537" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1469.14 93.8516C1496.79 128.548 1513 170.553 1513 215.812C1513 335.001 1400.58 431.623 1262.94 431.623C1194.89 431.623 1133.22 408.006 1088.24 369.721C1070.39 396.229 1038.22 413.92 1001.5 413.92C982.784 413.92 965.253 409.324 950.194 401.309C931.692 448.174 885.741 481.361 831.981 481.361C809.645 481.361 788.658 475.631 770.426 465.572C742.187 498.777 698.095 520.14 648.549 520.14C585.723 520.14 531.668 485.793 507.584 436.505C496.481 440.977 484.441 443.426 471.863 443.426C450.622 443.426 430.917 436.443 414.667 424.523C378.382 491.288 304.508 537 219.275 537C100.122 537 3.16621 447.665 0.0761719 336.362H0V0H1469.14V93.8516Z" fill="#A6F3FF"/>
+                </svg>
+            </div>
+            <div class="page " id="code">
+                <div id = "enter-code-title" >
+                    <div class="just-another-hand-regular" id="enter-code-text">Enter the code</div>
+                    <div id="title_boundary" class="obstacle "></div>
+                    <div class="just-another-hand-regular" id="hint"></div>
+                </div>
+                
+                <div class= "just-another-hand-regular" id="answerDisplay">
+                    <div id = "displayBoxes" class="container">
+                        <div class="box display" id="display0"> <div class = "obstacle " id="ob0" ></div></div>
+                        <div class="box display" id="display1"> <div class = "obstacle " id="ob1" ></div></div>
+                        <div class="box display" id="display2"> <div class = "obstacle " id="ob2"  ></div></div>
+                        <div class="box display" id="display3"> <div class = "obstacle " id="ob3" ></div></div>
+                        <div class="box display" id="display4"> <div class = "obstacle " id="ob4" ></div></div>
+                    </div>
+                    <div id="back">
+                        <div id="back-sign" class="box"> < <div class="obstacle" id="back-button"></div> </div>
+                    </div>
+                </div>
+                <div class = "gradient just-another-hand-regular" id="answerButtons">
+                    <div id="buttonBoxes" class="container"> 
+                        <div class = "box button">1<div class ="obstacle " id="box1"></div></div>
+                        <div class = "box button">2<div class ="obstacle " id="box2"></div></div>
+                        <div class = "box button">3<div class ="obstacle " id="box3"></div></div>
+                        <div class = "box button">4<div class ="obstacle " id="box4"></div></div>
+                        <div class = "box button">5<div class ="obstacle " id="box5"></div></div>
+                        <div class = "box button">6<div class ="obstacle " id="box6"></div></div>
+                        <div class = "box button">7<div class ="obstacle " id="box7"></div></div>
+                        <div class = "box button">8<div class ="obstacle " id="box8"></div></div>
+                        <div class = "box button">9<div class ="obstacle " id="box9"></div></div>
+                        <div class = "box button">0<div class ="obstacle " id="box0"></div></div>
+                    </div>
+                </div>
+                <div id = "got-it" class="gradient">
+                    <div class = " just-another-hand-regular " id="got-it-text">Got it!</div>
+                    <div class = " obstacle" id ="got_it_boundary"></div>
+                </div>
+                <div id="page-boundary" class="obstacle"></div>
+            </div>
+            <div class="divider"></div>
+            <div class="page" id="maze_page">
+                <div id="maze"></div>
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        <div class="arrow left">&#10094;</div>
+                        <div class="pages-wrapper heart pulse" id="popupPages"></div>
+                        <div class="arrow right">&#10095;</div>
+                    </div>
+                </div>
+            </div>
+            <div class = "divider" id ="enddivider">
+                <h1 class="just-another-hand-regular">You've made it to the end!</h1>
+                <h2 class="just-another-hand-regular">Be proud of how far you've come</h2> 
+            </div>
+            
+        </div>
+    </body>
+</html>
