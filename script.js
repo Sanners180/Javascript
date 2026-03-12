@@ -33,11 +33,7 @@ let back = false;
 let currentHeart = null;
 let currentPage = 0;
 const heart_id = [];
-<<<<<<< HEAD
 const solution = "85192"; //Answer is Heart 
-=======
-const solution = "84192"; //Answer is Heart 
->>>>>>> 418657bc0e583cf2b6dbf6871d215599f190446c
 
 const isEven = num => num % 2 === 0;
 const isOdd = num => num % 2 !== 0;
@@ -364,17 +360,10 @@ function step() {
               hint.innerText = "naughty. You miss a hint";
             } else {
               if (tries == 3) {hint.innerText = "Hint: thump-thump";}
-<<<<<<< HEAD
               if (tries == 5) {hint.innerText = "Hint: holding all love";}
               if (tries == 7) {hint.innerText = "Hint: where the soul lives";}
               if (tries == 9) {hint.innerText = "Hint: beating";}
               if (tries == 11) {hint.innerText = "Hint: A=1 B=2   23 = 2 + 3";}
-=======
-              if (tries == 5) {hint.innerText = "Hint: the key of life";}
-              if (tries == 7) {hint.innerText = "Hint: holding all love";}
-              if (tries == 9) {hint.innerText = "Hint: Where the soul lives";}
-              if (tries == 11) {hint.innerText = "Hint: beating";}
->>>>>>> 418657bc0e583cf2b6dbf6871d215599f190446c
             }
             answer.classList.add("incorrect");
             answer.classList.remove("correct");
